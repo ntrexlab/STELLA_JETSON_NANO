@@ -36,7 +36,7 @@ def gstreamer_pipeline(
     )
 
 if __name__=="__main__":
-    cap = cv2.VideoCapture(gstreamer_pipeline(flip_method=2), cv2.CAP_GSTREAMER)
+    cap = cv2.VideoCapture(gstreamer_pipeline(flip_method=0), cv2.CAP_GSTREAMER)
         
     rospy.init_node('stella_camera_node')
     bridge = CvBridge()
